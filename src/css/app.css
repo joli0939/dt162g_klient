@@ -1,0 +1,1450 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;  
+}
+
+/* Font från Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+
+
+/* CSS för mobil och surfplatta*/
+@media screen and (max-width: 799px) {
+
+    html {
+        background: #1f1f1f;
+        padding-bottom: 1vh;
+    }
+    body {
+        width: 97vw;
+        margin: 0 auto;
+        background: #fff;
+        padding-bottom: 1vh;
+    }
+
+    /* Bilder */
+    .loadingImg {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 30vw;
+        height: auto;    
+    }
+
+    .deleteImg {
+        width: 3vw;
+        height: auto;
+        margin-top: -1vh;
+        position: relative;
+        top: 0.3vh;
+        left: 1vw;
+    }
+
+    .linkImg {
+        width: 3vw;
+        height: auto;
+        margin-top: -1vh;
+        position: relative;
+        top: 0.3vh;
+        left: 1vw;
+    }
+
+
+
+
+
+    /* Text */
+    h1 {
+        font-size: 6vw;
+        font-weight: bold;
+        text-align: center;
+        color: #1f1f1f;
+        font-family: 'Roboto', sans-serif;
+        padding: 1vh 0 1vh 0;
+    }
+
+    h2 {
+        font-size: 4vw;
+        font-weight: bold;
+        padding: 1vh 0 2vh 7vw;
+        margin-top: 1vh;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h3 {
+        font-size: 2.4vw;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h4 {
+        font-size: 2vw;
+        margin-bottom: 1vh;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    label {
+        font-size: 1.9vw;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    input {
+        font-size: 0.8vw;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a:hover {
+        color: #1444a3;
+    }
+
+    button {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5vw;
+    }
+
+    .loadingTxt {
+        padding: 0 0 65vh 0;
+        text-align: center;
+    }
+
+    th {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+
+    td {
+        font-family: 'Roboto', sans-serif;
+        word-wrap:break-word;
+        font-size: 1.9vw;
+    }
+
+    .radioGame>h3 {
+        margin-bottom: 1vh;
+    }
+
+    .radioValue>h3 {
+        margin-bottom: 1vh;
+    }
+
+
+
+    /* Meny */
+    .menu {
+        background: #1f1f1f;
+        height: 7vh;
+    }
+
+    .menu>button {
+        height: 7vh;
+        background: none;
+        border: none;
+        font-size: 4vw;
+        outline: 0;
+        margin-left: 0.5vw;
+        color: #fff;
+    }
+
+    .menu>button:hover {
+        background: #1444a3;
+        color: #fff;
+    }
+
+    .menu>button:first-child{
+        margin-left: 5vw;
+    }
+
+
+
+    /* Radioknappar */
+    .radioGame {
+        padding: 4vh 0 2vh 5vw;
+    }
+
+    .radioGame label {
+        display: block;
+    }
+
+    .radioValue {
+        padding: 0 0 2vh 5vw;
+    }
+
+    .radioValue label {
+        display: block;
+    }
+
+
+
+    /* Table*/
+    /* Container */
+    .trophieTable {
+        width: 100%;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+    th {
+        padding: 2vh 3vw 2vh 1vw;
+        color: #fff;
+        text-align: left;
+        background: #1444a3;
+    }
+
+    td {
+        padding: 2vh 1vw 2vh 1vw;    
+    }
+
+    tbody>tr:nth-child(even) {
+        background: #e6ecfa;
+    }
+
+    .tableStyle {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .tableNameWidth {
+        width: 15%;
+    }
+
+    .tableDescriptionWidth {
+        width: 30%;
+    }
+
+    .tableValueWidth {
+        width: 10%;
+    }
+
+    .tableDateWidth {
+        width: 10%;
+    }
+
+    .tableGameWidth {
+        width: 20%;
+    }
+
+    .tableLinkWidth {
+        width: 5%;
+    }
+
+
+
+    /* Inloggning */
+    .loginMessage {
+        font-size: 2vw;
+        color: red;
+        text-align: center;
+    }
+
+    .loginForm {
+        display: block;
+        width: 70vw;
+        margin: 0 auto;
+        min-height: calc(100vh - 10vh);
+    }
+
+    .loginForm>label>span {
+        display: block;
+        text-align: center;
+        padding: 3vh 0 1vh 0;
+        color: #1f1f1f;
+        font-size: 3vw;
+    }
+
+    .loginForm>label>input {
+        width: 100%;
+        border-radius: 0;
+        height: 3vh;
+        border: 1px solid #1f1f1f;
+        padding-left: 1vw;
+        font-size: 3vw;
+    }
+
+    .loginForm>button{
+        display: block;
+        margin: 0 auto;
+        background: none;
+        border: none;
+        padding: 1vh 1vw 1vh 1vw;
+        margin-top: 2vh;
+        font-size: 3.5vw;
+        color: #1f1f1f;
+    }
+
+    .loginForm>button:hover {
+        background: #1444a3;
+        color: #fff;
+    }
+
+
+
+    /* Admin-sida */
+    .logoutButton {
+        background: none;
+        border: none;
+        font-weight: bold;
+        font-size: 3vw;
+        color: #1f1f1f;
+        padding: 1vh 0 1vh 7vw;
+    }
+
+    .logoutButton:hover {
+        cursor: pointer;
+        color: #1444a3;
+    }
+
+
+
+
+    /* Post trophie */
+    .postTrophie {
+        width: 60%;
+        margin-left: 7vw;
+    }
+
+    .postTrophie>form>label {
+        display: block;
+        padding: 1vh 0 1vh 0;
+    }
+
+    .postTrophie>form>label>input {
+        width: 60%;
+        float: right;
+        clear: both;
+        position: relative;
+        bottom: 0.5vh;
+        border: 1px solid #1f1f1f;
+        height: 1.9vh;
+        padding-left: 0.2vw;
+        font-size: 2vw;
+    }
+
+    .postTrophie>form>button {
+        border: none;
+        background: #1444a3;
+        padding: 1vh 3vw 1vh 3vw;
+        color: #fff;
+        margin-top: 1vh;
+        font-size: 2.5vw;
+    }
+
+    .postTrophie>form>button:hover {
+        cursor: pointer;
+        background: #1f1f1f;
+    }
+
+    .postMessage {
+        color: red;
+        padding-top: 0.5vh;
+    }
+
+
+
+    /* Tabell admin-sida */
+    .tableAdmin {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .adminTableName {
+        width: 13%;
+    }
+
+    .adminTableDescription {
+        width: 30%;
+    }
+
+    .adminTableValue {
+        width: 10%;
+    }
+
+    .adminTableDate {
+        width: 10%;
+    }
+
+    .adminTableGame {
+        width: 20%;
+    }
+
+    .adminTableLink {
+        width: 5%;
+    }
+
+    .adminTableDelete {
+        width: 12%;
+    }
+
+
+
+    /* Edit trophie */
+    .editTrophie {
+        display: block;
+        width: 60%;
+        margin-left: 7vw;
+        margin-bottom: 2vh;
+        padding: 0 5vw 1vh 5vw;
+        border-bottom: 1px solid #1444a3;
+    }
+
+    .editTrophie>form>label {
+        display: block;
+        padding: 1vh 0 1vh 0;
+    }
+
+    .editTrophie>form>label>input {
+        width: 60%;
+        float: right;
+        clear: both;
+        position: relative;
+        bottom: 0.5vh;
+        border: 1px solid #1f1f1f;
+        height: 1.9vh;
+        padding-left: 0.2vw;
+        font-size: 2vw;
+    }
+
+    .editTrophie>form>button {
+        border: none;
+        background: #1444a3;
+        padding: 1vh 3vw 1vh 3vw;
+        color: #fff;
+        margin-top: 1vh;
+    }
+
+    .editTrophie>form>button:hover {
+        background: #1f1f1f;
+    }
+
+
+
+    /* Speciellt utseende för radioknappar */
+
+    /* Ändrar label (container) */
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 3vw;
+        margin-bottom: 1vh;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Döljer ursprungligt utseende */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    /* Radioknapp med ändrat utseende */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2vw;
+        width: 2vw;
+        background-color: #c2c2c2;
+        border-radius: 50%;
+    }
+    
+    
+    /* Ändrar färg när radioknapp är vald */
+    .container input:checked ~ .checkmark {
+        background-color: #1444a3;
+    }
+    
+    /* Skapar ett tomt objekt som blir pricken i vald radioknapp */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    /* När radioknapp blir vald visas prick */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    /* Utseende för prick */
+    .container .checkmark:after {
+        top: 0.57vw;
+        left: 0.57vw;
+        width: 0.85vw;
+        height: 0.85vw;
+        border-radius: 50%;
+        background: white;
+    } 
+
+}
+
+
+
+/* CSS för surfplatta */
+@media screen and (min-width: 500px) and (max-width: 799px) {
+
+    html {
+        background: #1f1f1f;
+        padding-bottom: 1vh;
+    }
+    body {
+        width: 97vw;
+        margin: 0 auto;
+        background: #fff;
+        padding-bottom: 1vh;
+    }
+
+    /* Bilder */
+    .loadingImg {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 30vw;
+        height: auto;    
+    }
+
+    .deleteImg {
+        width: 3vw;
+        height: auto;
+        margin-top: -1vh;
+        position: relative;
+        top: 0.3vh;
+        left: 1vw;
+    }
+
+    .linkImg {
+        width: 3vw;
+        height: auto;
+        margin-top: -1vh;
+        position: relative;
+        top: 0.3vh;
+        left: 1vw;
+    }
+
+
+
+
+
+    /* Text */
+    h1 {
+        font-size: 6vw;
+        font-weight: bold;
+        text-align: center;
+        color: #1f1f1f;
+        font-family: 'Roboto', sans-serif;
+        padding: 1vh 0 1vh 0;
+    }
+
+    h2 {
+        font-size: 4vw;
+        font-weight: bold;
+        padding: 1vh 0 2vh 7vw;
+        margin-top: 1vh;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h3 {
+        font-size: 2.4vw;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h4 {
+        font-size: 2vw;
+        margin-bottom: 1vh;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    label {
+        font-size: 1.9vw;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    input {
+        font-size: 0.8vw;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a:hover {
+        color: #1444a3;
+    }
+
+    button {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5vw;
+    }
+
+    .loadingTxt {
+        padding: 0 0 65vh 0;
+        text-align: center;
+    }
+
+    th {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+
+    td {
+        font-family: 'Roboto', sans-serif;
+        word-wrap:break-word;
+        font-size: 1.9vw;
+    }
+
+    .radioGame>h3 {
+        margin-bottom: 1vh;
+    }
+
+    .radioValue>h3 {
+        margin-bottom: 1vh;
+    }
+
+
+
+    /* Meny */
+    .menu {
+        background: #1f1f1f;
+        height: 7vh;
+    }
+
+    .menu>button {
+        height: 7vh;
+        background: none;
+        border: none;
+        font-size: 4vw;
+        outline: 0;
+        margin-left: 0.5vw;
+        color: #fff;
+    }
+
+    .menu>button:hover {
+        background: #1444a3;
+        color: #fff;
+    }
+
+    .menu>button:first-child{
+        margin-left: 5vw;
+    }
+
+
+
+    /* Radioknappar */
+    .radioGame {
+        padding: 4vh 0 2vh 5vw;
+    }
+
+    .radioGame label {
+        display: block;
+    }
+
+    .radioValue {
+        padding: 0 0 2vh 5vw;
+    }
+
+    .radioValue label {
+        display: block;
+    }
+
+
+
+    /* Table*/
+    /* Container */
+    .trophieTable {
+        width: 100%;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+    th {
+        padding: 2vh 3vw 2vh 1vw;
+        color: #fff;
+        text-align: left;
+        background: #1444a3;
+    }
+
+    td {
+        padding: 2vh 1vw 2vh 1vw;    
+    }
+
+    tbody>tr:nth-child(even) {
+        background: #e6ecfa;
+    }
+
+    .tableStyle {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .tableNameWidth {
+        width: 15%;
+    }
+
+    .tableDescriptionWidth {
+        width: 30%;
+    }
+
+    .tableValueWidth {
+        width: 10%;
+    }
+
+    .tableDateWidth {
+        width: 10%;
+    }
+
+    .tableGameWidth {
+        width: 20%;
+    }
+
+    .tableLinkWidth {
+        width: 5%;
+    }
+
+
+
+    /* Inloggning */
+    .loginMessage {
+        font-size: 2vw;
+        color: red;
+        text-align: center;
+    }
+
+    .loginForm {
+        display: block;
+        width: 70vw;
+        margin: 0 auto;
+        min-height: calc(100vh - 10vh);
+    }
+
+    .loginForm>label>span {
+        display: block;
+        text-align: center;
+        padding: 3vh 0 1vh 0;
+        color: #1f1f1f;
+        font-size: 3vw;
+    }
+
+    .loginForm>label>input {
+        width: 100%;
+        border-radius: 0;
+        height: 3vh;
+        border: 1px solid #1f1f1f;
+        padding-left: 1vw;
+        font-size: 3vw;
+    }
+
+    .loginForm>button{
+        display: block;
+        margin: 0 auto;
+        background: none;
+        border: none;
+        padding: 1vh 1vw 1vh 1vw;
+        margin-top: 2vh;
+        font-size: 3.5vw;
+        color: #1f1f1f;
+    }
+
+    .loginForm>button:hover {
+        background: #1444a3;
+        color: #fff;
+    }
+
+
+
+    /* Admin-sida */
+    .logoutButton {
+        background: none;
+        border: none;
+        font-weight: bold;
+        font-size: 3vw;
+        color: #1f1f1f;
+        padding: 1vh 0 1vh 7vw;
+    }
+
+    .logoutButton:hover {
+        cursor: pointer;
+        color: #1444a3;
+    }
+
+
+
+
+    /* Post trophie */
+    .postTrophie {
+        width: 60%;
+        margin-left: 7vw;
+    }
+
+    .postTrophie>form>label {
+        display: block;
+        padding: 1vh 0 1vh 0;
+    }
+
+    .postTrophie>form>label>input {
+        width: 60%;
+        float: right;
+        clear: both;
+        position: relative;
+        bottom: 0.5vh;
+        border: 1px solid #1f1f1f;
+        height: 1.9vh;
+        padding-left: 0.2vw;
+        font-size: 2vw;
+    }
+
+    .postTrophie>form>button {
+        border: none;
+        background: #1444a3;
+        padding: 1vh 3vw 1vh 3vw;
+        color: #fff;
+        margin-top: 1vh;
+        font-size: 2.5vw;
+    }
+
+    .postTrophie>form>button:hover {
+        cursor: pointer;
+        background: #1f1f1f;
+    }
+
+    .postMessage {
+        color: red;
+        padding-top: 0.5vh;
+    }
+
+
+
+    /* Tabell admin-sida */
+    .tableAdmin {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .adminTableName {
+        width: 13%;
+    }
+
+    .adminTableDescription {
+        width: 30%;
+    }
+
+    .adminTableValue {
+        width: 10%;
+    }
+
+    .adminTableDate {
+        width: 10%;
+    }
+
+    .adminTableGame {
+        width: 20%;
+    }
+
+    .adminTableLink {
+        width: 5%;
+    }
+
+    .adminTableDelete {
+        width: 12%;
+    }
+
+
+
+    /* Edit trophie */
+    .editTrophie {
+        display: block;
+        width: 60%;
+        margin-left: 7vw;
+        margin-bottom: 2vh;
+        padding: 0 5vw 1vh 5vw;
+        border-bottom: 1px solid #1444a3;
+    }
+
+    .editTrophie>form>label {
+        display: block;
+        padding: 1vh 0 1vh 0;
+    }
+
+    .editTrophie>form>label>input {
+        width: 60%;
+        float: right;
+        clear: both;
+        position: relative;
+        bottom: 0.5vh;
+        border: 1px solid #1f1f1f;
+        height: 1.9vh;
+        padding-left: 0.2vw;
+        font-size: 2vw;
+    }
+
+    .editTrophie>form>button {
+        border: none;
+        background: #1444a3;
+        padding: 1vh 3vw 1vh 3vw;
+        color: #fff;
+        margin-top: 1vh;
+    }
+
+    .editTrophie>form>button:hover {
+        background: #1f1f1f;
+    }
+
+
+
+    /* Speciellt utseende för radioknappar */
+
+    /* Ändrar label (container) */
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 3vw;
+        margin-bottom: 1vh;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Döljer ursprungligt utseende */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    /* Radioknapp med ändrat utseende */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2vw;
+        width: 2vw;
+        background-color: #c2c2c2;
+        border-radius: 50%;
+    }
+    
+    
+    /* Ändrar färg när radioknapp är vald */
+    .container input:checked ~ .checkmark {
+        background-color: #1444a3;
+    }
+    
+    /* Skapar ett tomt objekt som blir pricken i vald radioknapp */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    /* När radioknapp blir vald visas prick */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    /* Utseende för prick */
+    .container .checkmark:after {
+        top: 0.57vw;
+        left: 0.57vw;
+        width: 0.85vw;
+        height: 0.85vw;
+        border-radius: 50%;
+        background: white;
+    } 
+
+}
+
+
+
+/* CSS för desktop */
+@media screen and (min-width: 800px) {
+
+    /* Bilder */
+    .loadingImg {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20vh;
+        width: 200px;
+        height: auto;
+    }
+
+    .deleteImg {
+        width: 1.3vw;
+        height: auto;
+        margin-top: -1vh;
+        position: relative;
+        top: 0.6vh;
+        left: 1vw;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .linkImg {
+        width: 1.3vw;
+        height: auto;
+        margin-top: -1vh;
+        position: relative;
+        top: 0.6vh;
+        left: 1vw;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+
+
+
+    /* Text */
+    h1 {
+        font-size: 2.3vw;
+        font-weight: bold;
+        padding: 2vh 5vw 2vh 23vw; 
+        color: #1f1f1f;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h2 {
+        font-size: 2vw;
+        font-weight: bold;
+        padding: 2vh 0 2vh 6vw;
+        margin-top: 5vh;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h3 {
+        font-size: 0.9vw;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h4 {
+        font-size: 0.7vw;
+        margin-bottom: 1vh;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    label {
+        font-size: 0.8vw;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    input {
+        font-size: 0.8vw;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: #1f1f1f;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a:hover {
+        color: #1444a3;
+    }
+
+    button {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .loadingTxt {
+        padding: 0;
+        text-align: center;
+    }
+
+    th {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    td {
+        font-family: 'Roboto', sans-serif;
+        word-wrap:break-word;
+    }
+
+    .radioGame>h3 {
+        margin-bottom: 1vh;
+    }
+
+    .radioValue>h3 {
+        margin-bottom: 1vh;
+    }
+
+
+
+    /* Meny */
+    .menu {
+        background: #1f1f1f;
+        height: 7vh;
+    }
+
+    .menu>button {
+        height: 7vh;
+        width: 5vw;
+        background: none;
+        border: none;
+        font-size: 1vw;
+        outline: 0;
+        margin-left: 0.5vw;
+        color: #fff;
+    }
+
+    .menu>button:hover {
+        cursor: pointer;
+        background: #1444a3;
+        color: #fff;
+    }
+
+    .menu>button:first-child{
+        margin-left: 5vw;
+    }
+
+
+
+    /* Radioknappar */
+    .radioGame {
+        width: 20vw;
+        float: left;
+        overflow: hidden;
+        padding-bottom: 4vh;
+        padding-left: 1.5vw;
+    }
+
+    .radioGame label {
+        display: block;
+    }
+
+    .radioValue {
+        width: 20vw;
+        float: left;
+        overflow: hidden;
+        padding-left: 1.5vw;
+    }
+
+    .radioValue label {
+        display: block;
+    }
+
+
+
+    /* Table*/
+    /* Container */
+    .trophieTable {
+        width: 75vw;
+        float: right;
+        overflow: hidden;
+        padding-right: 2vw;
+        min-height: 50vh;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+    th {
+        padding: 3vh 3vw 3vh 1vw;
+        font-weight: bold;
+        font-size: 0.9vw;
+        color: #fff;
+        text-align: left;
+        background: #1444a3;
+    }
+
+    th:hover {
+        cursor: pointer;
+        color: #1f1f1f;
+    }
+
+    td {
+        padding: 3vh 1vw 3vh 1vw;
+        font-size: 0.8vw;
+    }
+
+    tbody>tr:nth-child(even) {
+        background: #e6ecfa;
+    }
+
+    tbody>tr:hover {
+        background: #c9d8fa;
+    }
+
+    .deleteTd:hover {
+        cursor: pointer;
+    }
+
+    .deleteTd:hover .deleteImg {
+        transform: scale(0.8);
+    }
+
+    .linkTd:hover .linkImg {
+        transform: scale(0.8);
+    }
+
+
+
+    /* Inloggning */
+    .loginMessage {
+        font-size: 1vw;
+        color: red;
+        text-align: center;
+    }
+
+    .loginForm {
+        display: block;
+        padding-top: 10vh;
+        width: 20vw;
+        margin: 0 auto;
+    }
+
+    .loginForm>label>span {
+        display: block;
+        text-align: center;
+        padding: 3vh 0 1vh 0;
+        color: #1f1f1f;
+        font-size: 0.9vw;
+    }
+
+    .loginForm>label>input {
+        width: 100%;
+        border-radius: 0;
+        height: 3vh;
+        border: 1px solid #1f1f1f;
+        padding-left: 0.5vw;
+        font-size: 0.8vw;
+    }
+
+    .loginForm>button{
+        display: block;
+        margin: 0 auto;
+        background: none;
+        border: none;
+        padding: 1vh 1vw 1vh 1vw;
+        margin-top: 2vh;
+        font-size: 1.2vw;
+        color: #1f1f1f;
+    }
+
+    .loginForm>button:hover {
+        cursor: pointer;
+        background: #1444a3;
+        color: #fff;
+    }
+
+
+
+    /* Admin-sida */
+    .logoutButton {
+        background: none;
+        border: none;
+        font-weight: bold;
+        font-size: 1vw;
+        color: #1f1f1f;
+        padding: 1vh 0 1vh 6vw;
+    }
+
+    .logoutButton:hover {
+        cursor: pointer;
+        color: #1444a3;
+    }
+
+    .adminTrophielist {
+        width: 70vw;
+        margin-left: 6vw;
+    }
+
+
+
+    /* Post trophie */
+    .postTrophie {
+        width: 18vw;
+        margin-left: 6vw;
+    }
+
+    .postTrophie>form>label {
+        display: block;
+        padding: 1vh 0 1vh 0;
+    }
+
+    .postTrophie>form>label>input {
+        width: 50%;
+        float: right;
+        clear: both;
+        position: relative;
+        bottom: 0.5vh;
+        border: 1px solid #1f1f1f;
+        height: 2.5vh;
+        padding-left: 0.2vw;
+    }
+
+    .postTrophie>form>button {
+        border: none;
+        background: #1444a3;
+        padding: 1vh 1vw 1vh 1vw;
+        color: #fff;
+        margin-top: 1vh;
+    }
+
+    .postTrophie>form>button:hover {
+        cursor: pointer;
+        background: #1f1f1f;
+    }
+
+    .postMessage {
+        color: red;
+        padding-top: 0.5vh;
+    }
+
+
+
+    /* Edit trophie */
+    .editTrophie {
+        display: inline-block;
+        width: 17vw;
+        margin-left: 6vw;
+        margin-bottom: 5vh;
+    }
+
+    .editTrophie>form>label {
+        display: block;
+        padding: 1vh 0 1vh 0;
+    }
+
+    .editTrophie>form>label>input {
+        width: 50%;
+        float: right;
+        clear: both;
+        position: relative;
+        bottom: 0.5vh;
+        border: 1px solid #1f1f1f;
+        height: 2.5vh;
+        padding-left: 0.2vw;
+    }
+
+    .editTrophie>form>button {
+        border: none;
+        background: #1444a3;
+        padding: 1vh 1vw 1vh 1vw;
+        color: #fff;
+        margin-top: 1vh;
+    }
+
+    .editTrophie>form>button:hover {
+        cursor: pointer;
+        background: #1f1f1f;
+    }
+
+
+
+    /* Speciellt utseende för radioknappar */
+
+    /* Ändrar label (container) */
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 1.5vw;
+        margin-bottom: 1vh;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Döljer ursprungligt utseende */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    /* Radioknapp med ändrat utseende */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0.9vw;
+        width: 0.9vw;
+        background-color: #c2c2c2;
+        border-radius: 50%;
+    }
+    
+    /* Ändrar bakgrundsfärg när muspekaren är över */
+    .container:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    
+    /* Ändrar färg när radioknapp är vald */
+    .container input:checked ~ .checkmark {
+        background-color: #1444a3;
+    }
+    
+    /* Skapar ett tomt objekt som blir pricken i vald radioknapp */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    /* När radioknapp blir vald visas prick */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    /* Utseende för prick */
+    .container .checkmark:after {
+        top: 0.25vw;
+        left: 0.25vw;
+        width: 0.4vw;
+        height: 0.4vw;
+        border-radius: 50%;
+        background: white;
+    } 
+}
